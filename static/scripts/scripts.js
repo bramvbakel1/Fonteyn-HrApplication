@@ -29,7 +29,7 @@ function displayUsers(usersToDisplay) {
             <td>${user.userPrincipalName}</td>
             <td>${user.givenName}</td>
             <td>${user.surname}</td>
-            <td>${user.role}</td>
+            <td>${user.roles}</td>
             <td><button onclick="deleteUser('${user.id}')">Delete</button></td>
         `;
         tableBody.appendChild(row);

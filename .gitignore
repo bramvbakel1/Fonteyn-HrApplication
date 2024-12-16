@@ -3,4 +3,5 @@
 
 # Ignore Go binary files
 *.exe
-*.exe~
+certs/server.crt
+certs/server.key
