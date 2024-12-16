@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="/static/stylesheets/users.css">
+</head>
+<body>
+
+    <!-- Logo Home Button -->
+    <a href="/" id="home-button">
+        <img src="/static/images/Logo.png" alt="Home" id="logo" loading="lazy">
+    </a>
+
+    <h1>User Management</h1>
+
+    <!-- Add User Button -->
+    <button id="add-user-button">Add User</button>
+
+    <!-- Search Bar -->
+    <input type="text" id="search-input" placeholder="Search users..." class="search-bar" oninput="searchUsers()">
+
+    <!-- Users Table -->
+    <table id="users-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Display name</th>
+                <th>Email</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="users-table-body">
+            <!-- Users will be populated here -->
+        </tbody>
+    </table>
+
+    <!-- Modal for Adding User -->
+    <div id="add-user-modal" class="modal">
+        <div class="modal-content">
+            <!-- Close button (X) -->
+            <span class="close-btn" onclick="toggleAddUserForm()">&times;</span>
+
+            <h2>Add User</h2>
+            <form id="add-user-form">
+                <label for="display-name">Display Name:</label>
+                <input type="text" id="display-name" name="displayName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="firstName" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="lastName" required>
+
+                <button type="submit">Add User</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/scripts/scripts.js" defer></script>
+</body>
+</html>

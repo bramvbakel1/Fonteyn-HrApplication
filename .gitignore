@@ -1,0 +1,6 @@
+# Ignore .env file containing sensitive data
+.env
+
+# Ignore Go binary files
+*.exe
+*.exe~
