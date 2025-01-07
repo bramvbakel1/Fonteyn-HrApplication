@@ -1,7 +1,12 @@
 # Ignore .env file containing sensitive data
 .env
 
-# Ignore Go binary files
+# Ignore Dockerfile
+dockerfile
+
+# Ignore Go modules files
+go.mod
+go.sum
+
+# Ignore Go exe files
 *.exe
-certs/server.crt
-certs/server.key
